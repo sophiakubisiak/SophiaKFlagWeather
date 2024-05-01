@@ -1,0 +1,43 @@
+---
+title: "FizzBuzz Function"
+author: "Sophia Kubisiak"
+date: "2024-04-29"
+output: html_document
+---
+
+Function FizzBuzz.
+```{r}
+FizzBuzz <- function(n)
+  {
+  vec <- c()
+  
+  for (x in 1:n) {
+       if(x %% 3 == 0 && x %% 5 == 0)
+       {
+            vec <- append(vec, "Fizz Buzz")
+       }
+       else if(x %% 3 == 0)
+       {
+            vec <- append(vec, "Fizz")
+       }
+       else if(x %% 5 == 0)
+       {
+            vec <- append(vec, "Buzz")
+       }
+       else 
+       {
+            vec <- append(vec, x)
+       }
+  } 
+  print(vec)
+}
+
+```
+
+```{r}
+
+```
+    
+
+
+
